@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +34,11 @@
             --space-2xl: 64px;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         html {
             font-size: 16px;
@@ -71,7 +76,9 @@
             padding: var(--space-lg);
         }
 
-        .hero { text-align: center; }
+        .hero {
+            text-align: center;
+        }
 
         h1 {
             font-size: 2.5rem;
@@ -198,23 +205,37 @@
         }
 
         @media (max-width: 480px) {
-            h1 { font-size: 2rem; }
+            h1 {
+                font-size: 2rem;
+            }
+
             .personal-grid {
                 grid-template-columns: 1fr;
                 gap: var(--space-lg);
             }
-            .links { flex-direction: column; align-items: stretch; }
-            .links a { justify-content: center; }
+
+            .links {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .links a {
+                justify-content: center;
+            }
         }
     </style>
 </head>
+
 <body>
     <main>
         <section class="hero">
             <h1>Kameron Kales</h1>
-            <p class="tagline">Principal Engineer</p>
+            <p class="tagline">Engineering Leader</p>
             <div class="bio">
-                <p>Principal Engineer at <a href="https://fullspanhealth.com" target="_blank" rel="noopener">Fullspan Health</a>, where I architect and scale search infrastructure serving millions of consumers. I lead the Direct to Patient core search team, building hybrid semantic search systems while mentoring engineers across the organization.</p>
+                <p>Principal Engineer at <a href="https://fullspanhealth.com" target="_blank" rel="noopener">Fullspan
+                        Health</a>, where I architect and scale search infrastructure serving millions of consumers. I
+                    lead the Direct to Patient core search team, building hybrid semantic search systems while mentoring
+                    engineers across the organization.</p>
             </div>
 
             <div class="personal-section">
@@ -222,27 +243,34 @@
                 <div class="personal-grid">
                     <div class="personal-item">
                         <div class="personal-item-title">Agentic AI</div>
-                        <div class="personal-item-description">Designing self-healing, large-scale data collection fleets. Autonomous systems that fix themselves are the future.</div>
+                        <div class="personal-item-description">Designing self-healing, large-scale data collection
+                            fleets. Autonomous systems that fix themselves are the future.</div>
                     </div>
                     <div class="personal-item">
                         <div class="personal-item-title">Fintech</div>
-                        <div class="personal-item-description">Investing in and building tools at <a href="https://holdequity.com" target="_blank" rel="noopener">Hold Equity</a>. Helping people understand their equity compensation.</div>
+                        <div class="personal-item-description">Investing in and building tools at <a
+                                href="https://holdequity.com" target="_blank" rel="noopener">Hold Equity</a>. Helping
+                            people understand their equity compensation.</div>
                     </div>
                     <div class="personal-item">
                         <div class="personal-item-title">Jeeps</div>
-                        <div class="personal-item-description">Recently finished a full rebuild on a 2004 Wrangler. Gearset installs are the hardest thing I've ever done.</div>
+                        <div class="personal-item-description">Recently finished a full rebuild on a 2004 Wrangler.
+                            Gearset installs are the hardest thing I've ever done.</div>
                     </div>
                     <div class="personal-item">
                         <div class="personal-item-title">Bourbon</div>
-                        <div class="personal-item-description">My home bar might be the best in Charlotte. At least, I haven't found better.</div>
+                        <div class="personal-item-description">My home bar might be the best in Charlotte. At least, I
+                            haven't found better.</div>
                     </div>
                     <div class="personal-item">
                         <div class="personal-item-title">Real Estate</div>
-                        <div class="personal-item-description">Always evaluating properties for short-term rental potential. Reach out if you know of something interesting.</div>
+                        <div class="personal-item-description">Always evaluating properties for short-term rental
+                            potential. Reach out if you know of something interesting.</div>
                     </div>
                     <div class="personal-item">
                         <div class="personal-item-title">Coffee</div>
-                        <div class="personal-item-description">I make a latte that'll ruin your local cafe for you.</div>
+                        <div class="personal-item-description">I make a latte that'll ruin your local cafe for you.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -254,4 +282,5 @@
         </section>
     </main>
 </body>
+
 </html>
