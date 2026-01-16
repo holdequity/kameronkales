@@ -108,6 +108,17 @@
             margin-bottom: 0;
         }
 
+        .bio a {
+            color: var(--text-primary);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            transition: opacity 0.15s ease;
+        }
+
+        .bio a:hover {
+            opacity: 0.7;
+        }
+
         /* Personal Section */
         .personal-section {
             margin-bottom: var(--space-2xl);
@@ -192,7 +203,7 @@
             <h1>Kameron Kales</h1>
             <p class="tagline">Principal Engineer</p>
             <div class="bio">
-                <p>Principal Engineer at Fullspan Health (RVO), where I architect and scale search infrastructure serving millions of consumers. I lead the Direct to Patient core search team, building hybrid semantic search systems while mentoring engineers across the organization.</p>
+                <p>Principal Engineer at <a href="https://fullspanhealth.com" target="_blank" rel="noopener">Fullspan Health</a> (RVO), where I architect and scale search infrastructure serving millions of consumers. I lead the Direct to Patient core search team, building hybrid semantic search systems while mentoring engineers across the organization.</p>
                 <p>Outside of work, I invest in and build fintech tools at holdequity.com.</p>
             </div>
 
