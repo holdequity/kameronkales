@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kameron Kales - Principal Engineer building search infrastructure at scale">
+    <meta name="theme-color" content="#000000">
+    <title>Kameron Kales</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Kameron Kales">
+    <meta property="og:description" content="Principal Engineer building search infrastructure at scale">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kameronkales.com">
+
+    <style>
+        :root {
+            --bg-primary: #000000;
+            --bg-tertiary: #171717;
+            --text-primary: #ededed;
+            --text-secondary: #a1a1a1;
+            --border-color: #333333;
+            --border-color-hover: #444444;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --space-sm: 8px;
+            --space-md: 16px;
+            --space-lg: 24px;
+            --space-xl: 48px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 500px;
+            background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(120, 119, 198, 0.1), transparent);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        main {
+            width: 100%;
+            max-width: 600px;
+            padding: var(--space-lg);
+        }
+
+        .hero { text-align: center; }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--space-sm);
+            background: linear-gradient(180deg, #fff 0%, #a1a1a1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tagline {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--space-lg);
+        }
+
+        .bio {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--space-xl);
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        .bio p {
+            margin-bottom: var(--space-md);
+        }
+
+        .bio p:last-child {
+            margin-bottom: 0;
+        }
+
+        .links {
+            display: flex;
+            gap: var(--space-md);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            padding: var(--space-sm) var(--space-md);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.15s ease;
+        }
+
+        .links a:hover {
+            background-color: var(--bg-tertiary);
+            border-color: var(--border-color-hover);
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 2rem; }
+            .links { flex-direction: column; align-items: stretch; }
+            .links a { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <h1>Kameron Kales</h1>
+            <p class="tagline">Principal Engineer</p>
+            <div class="bio">
+                <p>Principal Engineer at Fullspan Health (RVO), where I architect and scale search infrastructure serving millions of consumers. I lead the Direct to Patient core search team, building hybrid semantic search systems while mentoring engineers across the organization.</p>
+                <p>Outside of work, I invest in and build fintech tools at holdequity.com.</p>
+            </div>
+            <nav class="links">
+                <a href="https://holdequity.com" target="_blank" rel="noopener">Hold Equity</a>
+                <a href="https://www.linkedin.com/in/kameronkales/" target="_blank" rel="noopener">LinkedIn</a>
+            </nav>
+        </section>
+    </main>
+</body>
+</html>
