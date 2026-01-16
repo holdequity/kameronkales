@@ -24,11 +24,13 @@
             --text-secondary: #a1a1a1;
             --border-color: #333333;
             --border-color-hover: #444444;
+            --border-subtle: #1a1a1a;
             --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             --space-sm: 8px;
             --space-md: 16px;
             --space-lg: 24px;
             --space-xl: 48px;
+            --space-2xl: 64px;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -48,6 +50,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: var(--space-xl) 0;
         }
 
         body::before {
@@ -90,7 +93,7 @@
         .bio {
             font-size: 1rem;
             color: var(--text-secondary);
-            margin-bottom: var(--space-xl);
+            margin-bottom: var(--space-2xl);
             max-width: 520px;
             margin-left: auto;
             margin-right: auto;
@@ -105,6 +108,47 @@
             margin-bottom: 0;
         }
 
+        /* Personal Section */
+        .personal-section {
+            margin-bottom: var(--space-2xl);
+            padding-top: var(--space-xl);
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .personal-heading {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            margin-bottom: var(--space-lg);
+        }
+
+        .personal-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-lg) var(--space-lg);
+            text-align: left;
+        }
+
+        .personal-item {
+            line-height: 1.7;
+        }
+
+        .personal-item-title {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .personal-item-description {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Links */
         .links {
             display: flex;
             gap: var(--space-md);
@@ -133,6 +177,10 @@
 
         @media (max-width: 480px) {
             h1 { font-size: 2rem; }
+            .personal-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-lg);
+            }
             .links { flex-direction: column; align-items: stretch; }
             .links a { justify-content: center; }
         }
@@ -147,6 +195,33 @@
                 <p>Principal Engineer at Fullspan Health (RVO), where I architect and scale search infrastructure serving millions of consumers. I lead the Direct to Patient core search team, building hybrid semantic search systems while mentoring engineers across the organization.</p>
                 <p>Outside of work, I invest in and build fintech tools at holdequity.com.</p>
             </div>
+
+            <div class="personal-section">
+                <h2 class="personal-heading">Off the Clock</h2>
+                <div class="personal-grid">
+                    <div class="personal-item">
+                        <div class="personal-item-title">Agentic AI</div>
+                        <div class="personal-item-description">Designing self-healing, large-scale data collection fleets. Autonomous systems that fix themselves are the future.</div>
+                    </div>
+                    <div class="personal-item">
+                        <div class="personal-item-title">Jeeps</div>
+                        <div class="personal-item-description">Recently finished a full rebuild on a 2004 Wrangler. There's something satisfying about fixing things that weren't designed to be fixed.</div>
+                    </div>
+                    <div class="personal-item">
+                        <div class="personal-item-title">Bourbon</div>
+                        <div class="personal-item-description">My home bar might be the best in Charlotte. At least, I haven't found better.</div>
+                    </div>
+                    <div class="personal-item">
+                        <div class="personal-item-title">Real Estate</div>
+                        <div class="personal-item-description">Always evaluating properties for short-term rental potential. Reach out if you know of something interesting.</div>
+                    </div>
+                    <div class="personal-item">
+                        <div class="personal-item-title">Coffee</div>
+                        <div class="personal-item-description">I make a latte that'll ruin your local cafe for you.</div>
+                    </div>
+                </div>
+            </div>
+
             <nav class="links">
                 <a href="https://holdequity.com" target="_blank" rel="noopener">Hold Equity</a>
                 <a href="https://www.linkedin.com/in/kameronkales/" target="_blank" rel="noopener">LinkedIn</a>
